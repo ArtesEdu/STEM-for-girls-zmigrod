@@ -29,9 +29,7 @@ Temporary Items
 
 ## Obsidian specific
 # OR only to exclude workspace cache
-**/.obsidian/workspace.json
-**/.obsidian/workspace*
-**/.obsidian/graph.json
+**/.obsidian
 
 # Add below lines to exclude OS settings and caches
 .trash/
