@@ -2,6 +2,20 @@
 
 The project of we did in the Stem for Girls workshop in Zmigrod, is based on the parts and diagrams described in the [Tamaguino](https://alojzjakob.github.io/Tamaguino/#hardware) project by Alojz Jakob.
 
+## BarbieKomputerek x Tamagotchi
+
+To be able to set up the Arduino that we built in the camp with the Tamagotchi code, you need to download the [arduino code](https://github.com/ArtesEdu/stem4dziewczynek/releases/tag/v.0.1.0), and install the `Adafruit_SSD1306` library, following the same steps in the library manager, you followed for the `u8g2` library.
+
+If you don't want to use git to clone the repository, you can also download the [zip file](https://github.com/ArtesEdu/stem4dziewczynek/archive/refs/tags/v.0.1.0.zip) directly, the code for the Tamagotchi will be under `stem4dziewczynek-v.0.1.0/BarbieTamagotchi/`, install the library `Adafruit_SSD1306` and it's dependencies via `Library Manager` on the Arduino IDE and after you upload the code to your BarbieKomputerek, you will be rewarded with a functioning Tamagotchi.
+
+Watch the video: 
+
+[![Watch the video](https://img.youtube.com/vi/U2peE1YFYuY/hqdefault.jpg)](https://www.youtube.com/embed/U2peE1YFYuY)
+
+If you haven't set up your Arduino IDE, follow the instructions below
+
+### Template for the Board
+
 Our version is using `without resistors, with active LOW`, and the picture below shows the setup of cables and pieces, the display is different to the one in the diagram, but the name of the pins on the display are the same:
 
 ![](images/arduino-BarbieTamagotchi-active-low.png)
@@ -52,6 +66,8 @@ Examples with the display need to have the following line, before the `setup()` 
 ```
 U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE); // enables the library under the u8g2 alias
 ```
+
+### Next steps
 
 Now you can start hacking!
 Happy hacking, 
